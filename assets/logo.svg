@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logo AIO Tools">
+  <style>
+    :root { --ink:#1B1A17; --bone:#F4EFE6; --acc:#B0341A; }
+    @media (prefers-color-scheme: dark) {
+      :root { --ink:#F4EFE6; --bone:#1B1A17; --acc:#E8603F; }
+    }
+  </style>
+  <rect x="8" y="8" width="52" height="52" rx="8" fill="var(--acc)"/>
+  <rect x="3" y="3" width="52" height="52" rx="8" fill="var(--bone)" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="11" y="11" width="16" height="16" rx="2" fill="var(--ink)"/>
+  <circle cx="39" cy="19" r="8" fill="var(--acc)"/>
+  <path d="M11 47 L27 47 L19 31 Z" fill="var(--acc)"/>
+  <rect x="36" y="31" width="6" height="16" fill="var(--ink)"/>
+  <rect x="31" y="36" width="16" height="6" fill="var(--ink)"/>
+</svg>

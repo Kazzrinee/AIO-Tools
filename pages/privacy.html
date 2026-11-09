@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kebijakan Privasi — All In One Tools</title>
+  <meta name="description" content="Kebijakan Privasi All In One Tools. Tidak ada server, tidak ada pelacakan. Semua data tersimpan di perangkat Anda.">
+  <link rel="canonical" href="https://example.com/pages/privacy.html">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=bricolage-grotesque:600,700|instrument-sans:400,500,700|jetbrains-mono:400,500|fraunces:600,700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body data-page="policy">
+  <a href="#main" class="skip-link">Langsung ke konten</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="AIO Tools — Beranda">
+        <img src="/assets/logo.svg" alt="" width="36" height="36">
+        <span>AIO Tools</span>
+      </a>
+      <nav class="header-nav" aria-label="Navigasi utama">
+        <a href="/">Beranda</a>
+        <a href="/pages/about.html">Tentang</a>
+        <a href="/pages/privacy.html" aria-current="page">Privasi</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="theme-toggle" aria-label="Ganti tema terang/gelap">
+          <svg aria-hidden="true" id="theme-icon"><use href="/assets/icons.svg#i-moon"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <article class="prose">
+      <h1>Kebijakan Privasi</h1>
+      <p class="updated">Terakhir diperbarui: 8 November 2026</p>
+
+      <div class="callout">
+        <p><strong>Ringkasan singkat.</strong> All In One Tools tidak memiliki server aplikasi.
+        Semua pemrosesan terjadi di browser Anda. Kami tidak mengumpulkan data pribadi,
+        tidak memasang iklan, dan tidak memasang cookie pelacakan.</p>
+      </div>
+
+      <h2>1. Data yang tidak kami kumpulkan</h2>
+      <ul>
+        <li>Isi teks, gambar, PDF, atau file apa pun yang Anda proses di tool.</li>
+        <li>Alamat email, nama, nomor telepon, atau data pribadi lain.</li>
+        <li>Riwayat penelusuran Anda di luar situs ini.</li>
+        <li>Alamat IP untuk tujuan profil atau iklan.</li>
+      </ul>
+
+      <h2>2. Data yang disimpan di perangkat Anda</h2>
+      <p>Kami menggunakan <code>localStorage</code> browser untuk menyimpan preferensi. Data ini tidak pernah dikirim ke server mana pun.</p>
+      <table>
+        <thead>
+          <tr><th>Kunci</th><th>Isi</th><th>Fungsi</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>aio-theme</code></td><td>"light" / "dark"</td><td>Mengingat tema pilihan Anda.</td></tr>
+          <tr><td><code>aio-consent</code></td><td>Objek preferensi</td><td>Mengingat persetujuan Anda.</td></tr>
+          <tr><td><code>aio-favs</code></td><td>Daftar slug tool</td><td>Daftar tool favorit Anda.</td></tr>
+          <tr><td><code>aio-hist</code></td><td>Maks 20 slug</td><td>Riwayat tool yang terakhir dibuka.</td></tr>
+          <tr><td>Cache API (service worker)</td><td>File statis</td><td>Akses offline &amp; kecepatan.</td></tr>
+        </tbody>
+      </table>
+      <p>Anda dapat menghapus semua data ini kapan saja dari tombol di bagian bawah halaman, atau lewat pengaturan browser.</p>
+
+      <h2>3. Layanan pihak ketiga</h2>
+      <p>Situs ini memuat beberapa sumber daya dari pihak ketiga agar bisa berjalan:</p>
+      <table>
+        <thead>
+          <tr><th>Layanan</th><th>Tujuan</th><th>Data yang mungkin terlihat</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bunny Fonts (<code>fonts.bunny.net</code>)</td>
+            <td>Memuat font tampilan (Bricolage Grotesque, Instrument Sans, JetBrains Mono, Fraunces).</td>
+            <td>Alamat IP &amp; User-Agent standar yang dikirim setiap browser saat meminta file. Bunny Fonts tidak menetapkan cookie pelacak.</td>
+          </tr>
+          <tr>
+            <td>Cloudflare Pages (hosting)</td>
+            <td>Menyajikan file statis situs.</td>
+            <td>Log akses standar (IP, waktu, URL) di sisi hosting, dikelola Cloudflare sesuai kebijakan mereka.</td>
+          </tr>
+          <tr>
+            <td>CDN library (jsDelivr / cdnjs)</td>
+            <td>Memuat library opsional (jsPDF, pdf-lib, QRCode.js, Chart.js, marked.js, CryptoJS) — hanya saat tool terkait dibuka.</td>
+            <td>Alamat IP &amp; User-Agent standar. Tidak ada library yang dimuat pada halaman yang tidak memerlukannya.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Kami tidak menggunakan Google Analytics, Facebook Pixel, atau layanan periklanan apa pun.</p>
+
+      <h2>4. Dasar hukum &amp; hak Anda</h2>
+      <p>Kami mematuhi prinsip yang selaras dengan <strong>UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP)</strong> Indonesia serta <strong>GDPR</strong> Uni Eropa untuk pengunjung dari wilayah tersebut. Karena kami tidak mengumpulkan data pribadi apa pun di server, praktisnya:</p>
+      <ul>
+        <li>Tidak ada data pribadi yang perlu Anda minta, ubah, atau hapus dari kami.</li>
+        <li>Semua data yang tersimpan berada di perangkat Anda dan dapat Anda hapus sendiri kapan saja.</li>
+        <li>Jika Anda tetap ingin mengajukan permintaan terkait data (misalnya mengonfirmasi bahwa kami tidak menyimpan data Anda), silakan hubungi kami lewat halaman <a href="/pages/contact.html">Kontak</a>.</li>
+      </ul>
+
+      <h2>5. Anak-anak</h2>
+      <p>Situs ini dirancang untuk pengguna berusia <strong>13 tahun ke atas</strong>. Kami tidak dengan sengaja mengumpulkan data dari anak di bawah 13 tahun (atau batas usia digital setempat). Jika Anda orang tua/wali dan mengetahui anak Anda menggunakan situs ini, Anda dapat menghapus semua data lokal dari perangkat tersebut dengan tombol hapus di bawah.</p>
+
+      <h2>6. Keamanan</h2>
+      <p>Karena seluruh pemrosesan dilakukan di browser Anda dan tidak ada data yang dikirim ke server, permukaan risiko jauh lebih kecil dibanding tool berbasis server. Akses ke situs melalui HTTPS. Untuk data yang sangat sensitif (misalnya dokumen rahasia), tetap disarankan bekerja secara offline setelah halaman dimuat.</p>
+
+      <h2>7. Perubahan kebijakan</h2>
+      <p>Kebijakan ini dapat diperbarui seiring penambahan fitur. Tanggal "Terakhir diperbarui" di atas akan berubah jika ada perubahan material. Kami tidak akan menambahkan pelacakan tanpa memberi tahu lebih dulu lewat banner persetujuan.</p>
+
+      <h2>8. Kontak</h2>
+      <p>Pemilik situs: <strong>Kazzrinee</strong>, Bekasi, Indonesia.<br>
+      Email: <a href="/pages/contact.html">formulir kontak</a> — atau <code>releain@gmail.com</code>.</p>
+
+      <div class="danger-zone">
+        <h2>Hapus semua data saya</h2>
+        <p>Tombol di bawah menghapus seluruh data lokal (tema, favorit, riwayat, preferensi, cache offline) dari browser ini. Tindakan tidak dapat dibatalkan.</p>
+        <button type="button" class="btn" data-delete-all>Hapus semua data saya</button>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> All In One Tools.</span>
+        <span><a href="/">Beranda</a> · <a href="/pages/cookie.html">Cookie &amp; Data</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

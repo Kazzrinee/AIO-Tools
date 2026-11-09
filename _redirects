@@ -1,0 +1,4 @@
+# Rewrite slug tool ke template
+/tools/:slug    /tool.html    200
+
+# Fallback halaman 404 (Cloudflare Pages otomatis pakai 404.html)

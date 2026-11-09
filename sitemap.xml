@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+
+  <!-- Teks -->
+  <url><loc>https://example.com/tools/penghitung-kata</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/ubah-huruf</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/hapus-duplikat-baris</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/urutkan-baris</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/cari-ganti</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/lorem-ipsum</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/pembuat-slug</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/pembalik-teks</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/diff-teks</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/ekstrak-email-url</loc><priority>0.8</priority></url>
+
+  <!-- Developer -->
+  <url><loc>https://example.com/tools/json-formatter</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/base64</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/url-codec</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/uuid-generator</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/timestamp-converter</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/color-converter</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/box-shadow-generator</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/minifier-kode</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/regex-tester</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/jwt-decoder</loc><priority>0.8</priority></url>
+
+  <!-- Gambar -->
+  <url><loc>https://example.com/tools/kompres-gambar</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/resize-gambar</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/konversi-gambar</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/gambar-ke-base64</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/base64-ke-gambar</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/potong-gambar</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/putar-balik-gambar</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/ambil-warna-gambar</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/watermark-gambar</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/filter-gambar</loc><priority>0.8</priority></url>
+
+  <!-- PDF -->
+  <url><loc>https://example.com/tools/gabung-pdf</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/pisah-pdf</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/kompres-pdf</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/gambar-ke-pdf</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/teks-ke-pdf</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/putar-pdf</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/nomor-halaman-pdf</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/watermark-pdf</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/hapus-halaman-pdf</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/ekstrak-teks-pdf</loc><priority>0.8</priority></url>
+
+  <!-- Kalkulator -->
+  <url><loc>https://example.com/tools/kalkulator-umum</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/kalkulator-persentase</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/kalkulator-bmi</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/kalkulator-kalori</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/kalkulator-cicilan</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/kalkulator-bunga-majemuk</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/kalkulator-diskon</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/kalkulator-ppn</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/kalkulator-umur</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/selisih-tanggal</loc><priority>0.8</priority></url>
+
+  <!-- Konverter -->
+  <url><loc>https://example.com/tools/konverter-panjang</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/konverter-berat</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/konverter-suhu</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/konverter-luas</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/konverter-volume</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/konverter-kecepatan</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/konverter-waktu</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/konverter-data</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/angka-romawi</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/konverter-basis-angka</loc><priority>0.8</priority></url>
+
+  <!-- Keamanan -->
+  <url><loc>https://example.com/tools/generator-password</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/cek-password</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/generator-hash</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/enkripsi-aes</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/generator-token</loc><priority>0.8</priority></url>
+
+  <!-- SEO -->
+  <url><loc>https://example.com/tools/generator-meta-tag</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/generator-open-graph</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/generator-robots-txt</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/pembuat-utm</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/kepadatan-kata-kunci</loc><priority>0.8</priority></url>
+
+  <!-- Pelajar -->
+  <url><loc>https://example.com/tools/pomodoro-timer</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/todo-list</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/catatan-cepat</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/kalkulator-ipk</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/flashcard</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/kanban-sederhana</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/kalkulator-rata-rata</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/timer-hitung-mundur</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/stopwatch</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/acak-kelompok</loc><priority>0.8</priority></url>
+
+  <!-- Hiburan -->
+  <url><loc>https://example.com/tools/pemilih-acak</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/lempar-koin</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/lempar-dadu</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/generator-angka-acak</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/quote-acak</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/roda-undian</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/generator-nama</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/suit-online</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/lempar-banyak-koin</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/undian-hadiah</loc><priority>0.8</priority></url>
+
+  <!-- Islami & Lokal -->
+  <url><loc>https://example.com/tools/waktu-salat</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/arah-kiblat</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/konversi-hijriah</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/zakat-maal</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/zakat-fitrah</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/kalkulator-thr</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/hari-libur-nasional</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/tasbih-digital</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/doa-harian</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/tools/asmaul-husna</loc><priority>0.8</priority></url>
+</urlset>

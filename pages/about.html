@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tentang — All In One Tools</title>
+  <meta name="description" content="Tentang All In One Tools: kumpulan tools gratis yang berjalan sepenuhnya di browser. Tanpa login, tanpa iklan, tanpa pelacakan.">
+  <link rel="canonical" href="https://example.com/pages/about.html">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=bricolage-grotesque:600,700|instrument-sans:400,500,700|jetbrains-mono:400,500|fraunces:600,700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body data-page="policy">
+  <a href="#main" class="skip-link">Langsung ke konten</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="AIO Tools — Beranda">
+        <img src="/assets/logo.svg" alt="" width="36" height="36">
+        <span>AIO Tools</span>
+      </a>
+      <nav class="header-nav" aria-label="Navigasi utama">
+        <a href="/">Beranda</a>
+        <a href="/pages/about.html" aria-current="page">Tentang</a>
+        <a href="/pages/privacy.html">Privasi</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="theme-toggle" aria-label="Ganti tema terang/gelap">
+          <svg aria-hidden="true" id="theme-icon"><use href="/assets/icons.svg#i-moon"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <article class="prose">
+      <h1>Tentang</h1>
+      <p class="updated">Terakhir diperbarui: 8 November 2026</p>
+
+      <h2>Apa ini</h2>
+      <p>All In One Tools adalah kumpulan tool praktis untuk pekerjaan sehari-hari: mengolah teks, mengurus file, menghitung, mengonversi satuan, dan banyak lagi. Semuanya gratis dan berjalan di browser Anda.</p>
+
+      <h2>Prinsip kami</h2>
+      <ul>
+        <li><strong>Gratis dan tanpa login.</strong> Tidak ada akun, tidak ada paywall, tidak ada batas pemakaian.</li>
+        <li><strong>Berjalan di perangkat Anda.</strong> Isi yang Anda proses tidak dikirim ke server. Tool yang membutuhkan pemrosesan file (gambar, PDF) bekerja sepenuhnya di browser.</li>
+        <li><strong>Tanpa iklan dan pelacakan.</strong> Tidak ada skrip iklan, tidak ada analitik pihak ketiga, tidak ada profil pengguna.</li>
+        <li><strong>Tanpa klaim berlebihan.</strong> Jika ada tool yang belum selesai atau punya batasan, kami akan katakan apa adanya.</li>
+      </ul>
+
+      <h2>Teknologi</h2>
+      <p>Situs ini dibangun dengan HTML, CSS, dan JavaScript vanilla — tanpa framework, tanpa build step. Library tambahan (jika diperlukan untuk tool tertentu) dimuat dari CDN publik hanya saat tool tersebut dibuka. Font dimuat dari Bunny Fonts. Hosting statis berada di Cloudflare Pages.</p>
+
+      <h2>Lisensi &amp; atribusi</h2>
+      <ul>
+        <li>Ikon UI: SVG buatan sendiri, bebas pakai.</li>
+        <li>Font: Bricolage Grotesque, Instrument Sans, JetBrains Mono, dan Fraunces — dilisensikan di bawah SIL Open Font License, dimuat dari <code>fonts.bunny.net</code>.</li>
+        <li>Library CDN opsional (jsPDF, pdf-lib, QRCode.js, Chart.js, marked.js, CryptoJS) — mengikuti lisensi masing-masing proyek.</li>
+        <li>Tidak ada foto stok. Tidak ada emoji di antarmuka.</li>
+      </ul>
+
+      <h2>Siapa di balik situs ini</h2>
+      <p>Nama pemilik: <strong>Kazzrinee</strong><br>
+      Lokasi: <strong>Bekasi, Indonesia</strong><br>
+      Kontak: <a href="/pages/contact.html">halaman kontak</a> atau <code>releain@gmail.com</code></p>
+
+      <h2>Untuk pengguna usia 13+</h2>
+      <p>Situs ini dirancang untuk pengguna berusia 13 tahun ke atas. Jika Anda lebih muda, mohon didampingi orang tua atau wali.</p>
+
+      <h2>Hak Anda</h2>
+      <p>Anda dapat menghapus semua data lokal kapan saja dari halaman <a href="/pages/cookie.html">Cookie &amp; Data</a> atau <a href="/pages/privacy.html">Kebijakan Privasi</a>.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> All In One Tools.</span>
+        <span><a href="/">Beranda</a> · <a href="/pages/contact.html">Kontak</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

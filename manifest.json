@@ -1,0 +1,20 @@
+{
+  "name": "All In One Tools",
+  "short_name": "AIO Tools",
+  "description": "Ratusan tool gratis yang berjalan di browser. Tanpa login, tanpa iklan.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F4EFE3",
+  "theme_color": "#F4EFE3",
+  "lang": "id",
+  "icons": [
+    {
+      "src": "/assets/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diagnostik — All In One Tools</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; padding: 16px; max-width: 720px; margin: auto; color: #14110C; background: #F4EFE3; }
+  h1 { font-size: 22px; margin: 8px 0 12px; }
+  .row { padding: 12px; border: 2px solid #14110C; border-radius: 6px; margin: 8px 0; background: #fff; }
+  .row strong { display: block; margin-bottom: 2px; }
+  .ok { color: #155A4A; font-weight: 700; }
+  .bad { color: #A6231E; font-weight: 700; }
+  code { background: #ebe4d4; padding: 2px 6px; border-radius: 3px; font-size: 13px; word-break: break-all; }
+  small { color: #4A4436; display: block; margin-top: 4px; font-size: 13px; line-height: 1.5; }
+  .rec { background: #fffbe8; border-color: #B0341A; }
+</style>
+</head>
+<body>
+<h1>Diagnostik situs</h1>
+<p style="font-size:14px;">Halaman ini memeriksa kenapa tools tidak muncul di preview Anda.</p>
+<div id="results"></div>
+
+<script>
+const results = document.getElementById('results');
+function row(label, ok, detail) {
+  const d = document.createElement('div');
+  d.className = 'row';
+  d.innerHTML = '<strong>' + label + ': <span class="' + (ok ? 'ok' : 'bad') + '">' + (ok ? 'OK' : 'GAGAL') + '</span></strong>' + detail;
+  results.appendChild(d);
+}
+
+async function check() {
+  const protocol = location.protocol;
+  const host = location.hostname;
+  const path = location.pathname;
+  const isFile = protocol === 'file:';
+
+  row('Protokol URL', !isFile,
+    '<code>' + protocol + '//' + (host || '') + path + '</code>' +
+    (isFile
+      ? '<small><strong>file:// → ES module diblokir browser.</strong> Ini penyebab utama halaman kosong.</small>'
+      : '<small>Protokol HTTP — modul bisa jalan.</small>'));
+
+  // Dynamic import data: URL
+  try {
+    await import('data:text/javascript,export default 1');
+    row('Dynamic import (data:)', true, '<small>Browser mendukung ES module.</small>');
+  } catch(e) {
+    row('Dynamic import (data:)', false, '<small>Error: ' + e.message + '</small>');
+  }
+
+  // Fetch relative path
+  try {
+    const res = await fetch('js/registry.js');
+    row('Fetch js/registry.js (relatif)', res.ok,
+      res.ok ? '<small>Status 200 — file ditemukan dari path relatif.</small>'
+             : '<small>Status ' + res.status + ' — file tidak ada di ' + path + 'js/.</small>');
+  } catch(e) {
+    row('Fetch js/registry.js (relatif)', false,
+      '<small>Error: ' + e.message + (isFile ? ' <strong>(file:// tidak bisa fetch file lokal)</strong>' : '') + '</small>');
+  }
+
+  // Fetch absolute path
+  try {
+    const res = await fetch('/js/registry.js');
+    row('Fetch /js/registry.js (absolut)', res.ok,
+      res.ok ? '<small>Status 200 — server menyajikan dari root domain. Path absolut cocok.</small>'
+             : '<small>Status ' + res.status + ' — <strong>preview menyajikan dari subfolder.</strong> Path absolut <code>/js/...</code> tidak akan ketemu.</small>');
+  } catch(e) {
+    row('Fetch /js/registry.js (absolut)', false, '<small>Error: ' + e.message + '</small>');
+  }
+
+  // Rekomendasi
+  const rec = document.createElement('div');
+  rec.className = 'row rec';
+  let html = '<strong>Rekomendasi:</strong>';
+  if (isFile) {
+    html += '<small>Gunakan HTTP server. Lihat instruksi di chat — pasang plugin Live Server, atau jalankan Termux <code>python -m http.server 8080</code> dari folder proyek, lalu buka <code>http://localhost:8080/</code>.</small>';
+  } else {
+    html += '<small>Buka Console browser. Jika modul gagal load, error-nya akan terlihat di sana. Jalankan juga <code>curl http://host/js/app.js</code> dari perangkat lain untuk konfirmasi path.</small>';
+  }
+  rec.innerHTML += html;
+  results.appendChild(rec);
+}
+check();
+</script>
+</body>
+</html>

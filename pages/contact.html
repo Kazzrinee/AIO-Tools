@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontak — All In One Tools</title>
+  <meta name="description" content="Hubungi pemilik All In One Tools: pertanyaan, laporan bug, atau permintaan hapus data.">
+  <link rel="canonical" href="https://example.com/pages/contact.html">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=bricolage-grotesque:600,700|instrument-sans:400,500,700|jetbrains-mono:400,500|fraunces:600,700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body data-page="policy">
+  <a href="#main" class="skip-link">Langsung ke konten</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="AIO Tools — Beranda">
+        <img src="/assets/logo.svg" alt="" width="36" height="36">
+        <span>AIO Tools</span>
+      </a>
+      <nav class="header-nav" aria-label="Navigasi utama">
+        <a href="/">Beranda</a>
+        <a href="/pages/about.html">Tentang</a>
+        <a href="/pages/privacy.html">Privasi</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="theme-toggle" aria-label="Ganti tema terang/gelap">
+          <svg aria-hidden="true" id="theme-icon"><use href="/assets/icons.svg#i-moon"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <article class="prose">
+      <h1>Kontak</h1>
+      <p class="updated">Terakhir diperbarui: 8 November 2026</p>
+
+      <p>Untuk pertanyaan, laporan bug, permintaan hapus data, atau hal lain — silakan isi formulir di bawah. Formulir ini <strong>tidak mengirim data ke server</strong>: setelah Anda klik Kirim, aplikasi email di perangkat Anda akan terbuka dengan isi pesan yang sudah terisi. Anda dapat memeriksa dan mengubah sebelum mengirim.</p>
+
+      <h2>Informasi pemilik</h2>
+      <table>
+        <tbody>
+          <tr><th>Nama</th><td>Kazzrinee</td></tr>
+          <tr><th>Email</th><td><code>releain@gmail.com</code> <button type="button" class="btn btn-sm" id="copy-owner-email" style="margin-left: 6px;">Salin</button></td></tr>
+          <tr><th>Lokasi</th><td>Bekasi, Indonesia</td></tr>
+          <tr><th>Waktu respons</th><td>Biasanya dalam 3–5 hari kerja</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Formulir pesan</h2>
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="c-name">Nama</label>
+          <input type="text" id="c-name" name="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="c-email">Email</label>
+          <input type="email" id="c-email" name="email" autocomplete="email" required>
+          <div class="help">Dipakai hanya supaya pemilik bisa membalas. Tidak disimpan di server mana pun.</div>
+        </div>
+        <div class="field">
+          <label for="c-topic">Topik</label>
+          <select id="c-topic" name="topic" required>
+            <option value="">— pilih topik —</option>
+            <option value="Pertanyaan umum">Pertanyaan umum</option>
+            <option value="Laporan bug">Laporan bug</option>
+            <option value="Permintaan hapus data">Permintaan hapus data</option>
+            <option value="Koreksi konten">Koreksi konten</option>
+            <option value="Kerja sama">Kerja sama</option>
+            <option value="Lainnya">Lainnya</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="c-message">Pesan</label>
+          <textarea id="c-message" name="message" rows="6" placeholder="Jelaskan sedetail mungkin agar bisa ditindaklanjuti." required></textarea>
+        </div>
+        <div class="field">
+          <label style="display:flex; gap:8px; align-items:flex-start; font-weight:400; text-transform:none; letter-spacing:0;">
+            <input type="checkbox" id="c-consent" name="consent" required style="width:22px; height:22px; margin-top:2px; accent-color:var(--accent);">
+            <span>Saya menyetujui data yang saya isi digunakan untuk membalas pesan saya sesuai <a href="/pages/privacy.html">Kebijakan Privasi</a>. Data tidak disimpan di server situs ini.</span>
+          </label>
+        </div>
+        <div id="contact-error" class="error hidden" role="alert" aria-live="assertive"></div>
+        <div class="tool-actions">
+          <button type="submit" class="btn btn-primary">
+            <svg aria-hidden="true"><use href="/assets/icons.svg#i-mail"/></svg> Buka aplikasi email
+          </button>
+        </div>
+      </form>
+
+      <h2>Permintaan hapus data</h2>
+      <p>Karena kami tidak menyimpan data pribadi di server, permintaan hapus data di sisi kami umumnya bersifat konfirmasi. Untuk menghapus data lokal di perangkat Anda sendiri, gunakan tombol di <a href="/pages/cookie.html">halaman Cookie &amp; Data</a>.</p>
+
+      <h2>Laporkan bug</h2>
+      <p>Jika sebuah tool tidak berfungsi seperti yang diharapkan, sertakan: nama tool, langkah yang Anda lakukan, dan hasil yang Anda harapkan. Jika bisa, sertakan tangkapan layar. Terima kasih telah membantu memperbaiki situs.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> All In One Tools.</span>
+        <span><a href="/">Beranda</a> · <a href="/pages/privacy.html">Privasi</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/app.js"></script>
+  <script type="module" src="/js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All In One Tools — Ratusan Tools Gratis di Browser</title>
+  <meta name="description" content="Kumpulan tools gratis yang berjalan sepenuhnya di browser. Tanpa login, tanpa iklan, tanpa batas. Teks, developer, gambar, PDF, kalkulator, konverter, dan lainnya.">
+  <meta name="theme-color" content="#F4EFE3">
+  <link rel="canonical" href="https://example.com/">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=bricolage-grotesque:600,700|instrument-sans:400,500,700|jetbrains-mono:400,500|fraunces:600,700&display=swap">
+
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/pages.css">
+
+  <meta property="og:title" content="All In One Tools — Ratusan Tools Gratis di Browser">
+  <meta property="og:description" content="Tanpa login, tanpa iklan. Semua berjalan di browser Anda.">
+  <meta property="og:type" content="website">
+</head>
+<body data-page="home">
+
+  <a href="#main" class="skip-link">Langsung ke konten</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="AIO Tools — Beranda">
+        <img src="/assets/logo.svg" alt="" width="36" height="36">
+        <span>AIO Tools</span>
+      </a>
+      <nav class="header-nav" aria-label="Navigasi utama">
+        <a href="/">Beranda</a>
+        <a href="/pages/about.html">Tentang</a>
+        <a href="/pages/privacy.html">Privasi</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="theme-toggle" aria-label="Ganti tema terang/gelap">
+          <svg aria-hidden="true" id="theme-icon"><use href="/assets/icons.svg#i-moon"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <p class="hero-eyebrow">perkakas digital untuk semua orang</p>
+      <h1 class="hero-title">
+        <span class="num" id="tool-count">—</span> tools.<br>
+        Semua gratis, semua di browser.
+      </h1>
+      <p class="hero-sub">
+        Tanpa login, tanpa iklan, tanpa batas. Semua proses berjalan di perangkat Anda —
+        tidak ada data yang dikirim ke server.
+      </p>
+
+      <div class="search-wrap">
+        <label for="search-input" class="sr-only">Cari tool</label>
+        <input
+          type="search"
+          class="search-input"
+          id="search-input"
+          placeholder="Cari tool: kata, json, pdf, kalkulator…"
+          autocomplete="off"
+          spellcheck="false">
+        <svg class="search-icon" aria-hidden="true"><use href="/assets/icons.svg#i-search"/></svg>
+      </div>
+    </section>
+
+    <section class="container" aria-labelledby="cat-heading">
+      <div class="section-head">
+        <h2 id="cat-heading">Kategori</h2>
+        <span class="edit-label">indeks isi</span>
+      </div>
+      <ul class="cat-list" id="cat-list" aria-label="Daftar kategori"></ul>
+    </section>
+
+    <section class="container" aria-labelledby="tools-heading">
+      <div class="section-head">
+        <h2 id="tools-heading">Semua tool</h2>
+        <span class="edit-label" id="tools-filter-label"></span>
+      </div>
+      <div class="tool-grid" id="tool-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-cols">
+        <div>
+          <h3>Tools</h3>
+          <ul>
+            <li><a href="/">Semua tool</a></li>
+            <li><a href="/#cat-heading">Kategori</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="/pages/privacy.html">Kebijakan Privasi</a></li>
+            <li><a href="/pages/terms.html">Ketentuan Layanan</a></li>
+            <li><a href="/pages/refund.html">Refund</a></li>
+            <li><a href="/pages/cookie.html">Cookie &amp; Data</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tentang</h3>
+          <ul>
+            <li><a href="/pages/about.html">Tentang situs</a></li>
+            <li><a href="/pages/contact.html">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> All In One Tools. Semua gratis.</span>
+        <span>Dibuat untuk publik. Tanpa iklan. Tanpa pelacakan.</span>
+      </div>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="container" style="padding: 24px 0;">
+      <p>JavaScript diperlukan untuk memuat daftar tool. Aktifkan JavaScript di browser Anda.</p>
+    </div>
+  </noscript>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halaman tidak ditemukan — All In One Tools</title>
+  <meta name="description" content="Halaman yang Anda cari tidak ditemukan.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=bricolage-grotesque:600,700|instrument-sans:400,500,700|jetbrains-mono:400,500|fraunces:600,700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body data-page="notfound">
+  <a href="#main" class="skip-link">Langsung ke konten</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="AIO Tools — Beranda">
+        <img src="/assets/logo.svg" alt="" width="36" height="36">
+        <span>AIO Tools</span>
+      </a>
+      <nav class="header-nav" aria-label="Navigasi utama">
+        <a href="/">Beranda</a>
+        <a href="/pages/about.html">Tentang</a>
+        <a href="/pages/privacy.html">Privasi</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="theme-toggle" aria-label="Ganti tema terang/gelap">
+          <svg aria-hidden="true" id="theme-icon"><use href="/assets/icons.svg#i-moon"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <div class="prose">
+      <h1 style="font-size: clamp(3rem, 12vw, 6rem); line-height: 1; margin-bottom: 8px;">404</h1>
+      <p style="font-family: var(--font-edit); font-style: italic; font-size: var(--fs-lg); color: var(--accent); margin-bottom: 16px;">
+        Kotak ini kosong.
+      </p>
+      <p style="font-size: var(--fs-md); max-width: 55ch;">
+        Halaman yang Anda cari tidak ada, atau sudah dipindah. Mungkin Anda ingin:
+      </p>
+
+      <ul style="font-size: var(--fs-md);">
+        <li><a href="/">Kembali ke beranda</a> dan telusuri kategori</li>
+        <li>Gunakan kotak pencarian di beranda untuk menemukan tool</li>
+        <li><a href="/pages/contact.html">Laporkan</a> jika menurut Anda ini kesalahan</li>
+      </ul>
+
+      <div class="callout" style="margin-top: 24px;">
+        <p><strong>Tips.</strong> Semua tool berada di <code>/tools/nama-tool</code>. Jika Anda tahu slug-nya, buka langsung, misalnya <code>/tools/penghitung-kata</code>.</p>
+      </div>
+
+      <div class="tool-actions">
+        <a href="/" class="btn btn-primary">
+          <svg aria-hidden="true"><use href="/assets/icons.svg#i-arrow-left"/></svg> Beranda
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> All In One Tools.</span>
+        <span><a href="/">Beranda</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

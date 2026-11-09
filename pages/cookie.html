@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cookie &amp; Data — All In One Tools</title>
+  <meta name="description" content="Kami tidak menggunakan cookie pelacak. Semua data tersimpan di localStorage browser Anda dan bisa dihapus kapan saja.">
+  <link rel="canonical" href="https://example.com/pages/cookie.html">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=bricolage-grotesque:600,700|instrument-sans:400,500,700|jetbrains-mono:400,500|fraunces:600,700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body data-page="policy">
+  <a href="#main" class="skip-link">Langsung ke konten</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="AIO Tools — Beranda">
+        <img src="/assets/logo.svg" alt="" width="36" height="36">
+        <span>AIO Tools</span>
+      </a>
+      <nav class="header-nav" aria-label="Navigasi utama">
+        <a href="/">Beranda</a>
+        <a href="/pages/about.html">Tentang</a>
+        <a href="/pages/privacy.html">Privasi</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="theme-toggle" aria-label="Ganti tema terang/gelap">
+          <svg aria-hidden="true" id="theme-icon"><use href="/assets/icons.svg#i-moon"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <article class="prose">
+      <h1>Cookie &amp; Data</h1>
+      <p class="updated">Terakhir diperbarui: 8 November 2026</p>
+
+      <div class="callout">
+        <p><strong>Singkatnya:</strong> kami tidak memasang cookie pelacak. Kami hanya menyimpan beberapa preferensi di <code>localStorage</code> browser Anda, dan Anda dapat menghapusnya kapan saja.</p>
+      </div>
+
+      <h2>1. Cookie pelacak</h2>
+      <p>Kami <strong>tidak</strong> menggunakan cookie untuk iklan, analitik, atau pelacakan lintas situs. Tidak ada skrip pelacak pihak ketiga yang dimuat. Karena itu, tidak ada skrip non-esensial yang perlu diblokir sebelum persetujuan — memang tidak ada.</p>
+
+      <h2>2. Data yang kami simpan di perangkat</h2>
+      <p>Berikut daftar lengkap penyimpanan lokal yang digunakan situs:</p>
+      <table>
+        <thead>
+          <tr><th>Kunci</th><th>Jenis</th><th>Isi</th><th>Fungsi</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>aio-consent</code></td><td>localStorage</td><td>Objek preferensi</td><td>Mengingat pilihan Anda di banner ini.</td></tr>
+          <tr><td><code>aio-theme</code></td><td>localStorage</td><td>"light" / "dark"</td><td>Mengingat tema pilihan Anda.</td></tr>
+          <tr><td><code>aio-favs</code></td><td>localStorage</td><td>Daftar slug</td><td>Tool favorit Anda.</td></tr>
+          <tr><td><code>aio-hist</code></td><td>localStorage</td><td>Maks 20 slug</td><td>Riwayat tool yang dibuka.</td></tr>
+          <tr><td>Cache API</td><td>Cache Storage</td><td>File situs</td><td>Akses offline &amp; performa.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>3. Kategori yang dapat Anda atur</h2>
+      <ul>
+        <li><strong>Esensial</strong> — selalu aktif. Hanya status persetujuan itu sendiri.</li>
+        <li><strong>Preferensi tampilan</strong> — tema, favorit, riwayat. Jika Anda matikan, fitur ini tidak akan diingat antar kunjungan.</li>
+        <li><strong>Analitik</strong> — saat ini tidak digunakan. Jika di masa depan diaktifkan, akan bersifat opsional dan anonim, dan hanya dimuat setelah Anda setujui.</li>
+      </ul>
+
+      <div class="tool-actions">
+        <button type="button" class="btn btn-primary" data-open-consent>Ubah preferensi</button>
+      </div>
+
+      <h2>4. Menghapus data dari browser Anda</h2>
+      <p>Anda dapat menghapus semua data lokal (tema, favorit, riwayat, preferensi, cache offline) dengan tombol di bawah. Tindakan ini tidak dapat dibatalkan dan halaman akan dimuat ulang.</p>
+
+      <div class="danger-zone">
+        <h2>Hapus semua data saya</h2>
+        <p>Membersihkan <code>localStorage</code>, <code>sessionStorage</code>, seluruh cache service worker, dan registrasi service worker di browser ini.</p>
+        <button type="button" class="btn" data-delete-all>Hapus semua data saya</button>
+      </div>
+
+      <h2>5. Cara lain menghapus dari browser</h2>
+      <p>Anda juga bisa menghapus lewat pengaturan browser:</p>
+      <ul>
+        <li><strong>Chrome Android</strong>: Setelan → Privasi &amp; keamanan → Hapus data penjelajahan → centang "Cookie, situs, dan data yang tersimpan".</li>
+        <li><strong>Firefox</strong>: Setelan → Privasi &amp; Keamanan → Cookie dan Data Situs → Kelola Data.</li>
+        <li><strong>Safari iOS</strong>: Pengaturan → Safari → Hapus Riwayat dan Data Situs Web.</li>
+      </ul>
+
+      <h2>6. Kontak</h2>
+      <p>Pertanyaan lebih lanjut mengenai halaman ini silakan kirim lewat <a href="/pages/contact.html">halaman kontak</a>.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> All In One Tools.</span>
+        <span><a href="/">Beranda</a> · <a href="/pages/privacy.html">Privasi</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

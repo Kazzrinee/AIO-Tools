@@ -1,0 +1,103 @@
+/* tokens.css — Design tokens "kotak perkakas"
+   Semua warna FLAT. Tidak ada gradient.
+   Palet: putih tulang hangat / arang pekat + 11 warna blok kategori. */
+
+:root {
+  /* Font peran */
+  --font-display: 'Bricolage Grotesque', 'Trebuchet MS', system-ui, sans-serif;
+  --font-body: 'Instrument Sans', 'Gill Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+  --font-edit: 'Fraunces', Georgia, 'Times New Roman', serif;
+
+  /* Skala spasi */
+  --sp-1: 0.25rem; --sp-2: 0.5rem; --sp-3: 0.75rem; --sp-4: 1rem;
+  --sp-5: 1.5rem; --sp-6: 2rem; --sp-7: 3rem; --sp-8: 4rem; --sp-9: 6rem;
+
+  /* Skala teks */
+  --fs-xs: 0.75rem; --fs-sm: 0.875rem; --fs-base: 1rem; --fs-md: 1.125rem;
+  --fs-lg: 1.25rem; --fs-xl: 1.5rem; --fs-2xl: 2rem; --fs-3xl: 2.75rem;
+  --fs-4xl: 4rem; --fs-5xl: 6rem;
+
+  /* Radius kecil (bukan pill) */
+  --r-sm: 2px; --r-md: 4px; --r-lg: 8px;
+
+  /* Border tegas */
+  --bw: 1.5px; --bw-strong: 2px;
+
+  /* Motion */
+  --dur-1: 150ms; --dur-2: 220ms;
+  --ease: cubic-bezier(0.2, 0.6, 0.2, 1);
+
+  /* Layout */
+  --container: 1200px;
+  --header-h: 64px;
+}
+
+/* ---------- Tema Terang (default) ---------- */
+[data-theme="light"] {
+  --bg: #F4EFE3;
+  --bg-alt: #EBE4D4;
+  --surface: #FFFFFF;
+  --surface-2: #F4EFE3;
+  --ink: #14110C;
+  --ink-muted: #4A4436;
+  --ink-inv: #F4EFE3;
+  --border: #14110C;
+  --border-muted: #C9C0AB;
+  --accent: #B0341A;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #F0D6CC;
+  --skeleton: #E1D9C4;
+  --skeleton-hi: #ECE5D2;
+  --danger: #A6231E;
+  --ok: #2F5D2F;
+  --shadow: 3px 3px 0 #14110C;
+  --shadow-hover: 5px 5px 0 #14110C;
+
+  --cat-teks: #234876;
+  --cat-developer: #155A4A;
+  --cat-gambar: #9A4A28;
+  --cat-pdf: #5A3D5F;
+  --cat-kalkulator: #2E5A2E;
+  --cat-konverter: #8A6216;
+  --cat-keamanan: #8B2E2E;
+  --cat-seo: #3A4A5C;
+  --cat-pelajar: #6B4E2E;
+  --cat-hiburan: #7A2E4A;
+  --cat-islami: #4A6438;
+}
+
+/* ---------- Tema Gelap ---------- */
+[data-theme="dark"] {
+  --bg: #16140F;
+  --bg-alt: #1F1C15;
+  --surface: #211E17;
+  --surface-2: #16140F;
+  --ink: #F4EFE3;
+  --ink-muted: #B5AC98;
+  --ink-inv: #16140F;
+  --border: #F4EFE3;
+  --border-muted: #4A4436;
+  --accent: #FF7A50;
+  --accent-ink: #16140F;
+  --accent-soft: #4A1F12;
+  --skeleton: #2A2619;
+  --skeleton-hi: #34301F;
+  --danger: #FF8A85;
+  --ok: #7AC08A;
+  --shadow: 3px 3px 0 #F4EFE3;
+  --shadow-hover: 5px 5px 0 #F4EFE3;
+
+  /* Kategori di tema gelap: versi lebih terang; teks di atasnya pakai --ink-inv */
+  --cat-teks: #7FA8D8;
+  --cat-developer: #7FC8B5;
+  --cat-gambar: #E0906E;
+  --cat-pdf: #B898BD;
+  --cat-kalkulator: #8FB88F;
+  --cat-konverter: #DDB866;
+  --cat-keamanan: #E08A8A;
+  --cat-seo: #98A8BC;
+  --cat-pelajar: #C8A87E;
+  --cat-hiburan: #D88AA8;
+  --cat-islami: #A8C890;
+}
