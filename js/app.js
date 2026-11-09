@@ -1,7 +1,7 @@
 // app.js — router, tema, pencarian, favorit, riwayat, render tool, consent
 import { CATEGORIES, TOOLS } from './registry.js';
 
-// Mengimpor consent.js secara aman (jika file belum ada, web tidak akan crash total)
+// Mengimpor consent.js secara aman
 let initConsent = () => {};
 try {
   const consentModule = await import('./consent.js');
@@ -140,7 +140,7 @@ function renderToolGrid(filter = {}) {
   grid.innerHTML = list.map(t => {
     const c = CATEGORIES.find(x => x.id === t.category);
     return `
-      <a class="tool-card" href="/tools/${t.slug}" style="--cat-color: var(--cat-${t.category});">
+      <a class="tool-card" href="/tool.html?slug=${t.slug}" style="--cat-color: var(--cat-${t.category});">
         <span class="tool-cat-tag">${c?.name || t.category}</span>
         <span class="tool-icon" aria-hidden="true"><svg><use href="/assets/icons.svg#${t.icon}"/></svg></span>
         <h3>${t.name}</h3>
@@ -181,7 +181,7 @@ async function initToolPage() {
         <a href="/?kat=${tool.category}">${cat?.name || tool.category}</a><span class="sep">/</span>
         <span>${tool.name}</span>
       </nav>
-      <div style="display:flex; align-items:flex-start; gap: 12px; flex-wrap: wrap;">
+      <div style="display:flex; align-items: flex-start; gap: 12px; flex-wrap: wrap;">
         <div style="flex: 1; min-width: 240px;">
           <h1 class="tool-title">${tool.name}</h1>
           <p class="tool-sub">${tool.desc}</p>
@@ -242,7 +242,7 @@ async function initToolPage() {
       relGrid.closest('section').style.display = 'none';
     } else {
       relGrid.innerHTML = related.map(t => `
-        <a class="tool-card" href="/tools/${t.slug}" style="--cat-color: var(--cat-${t.category});">
+        <a class="tool-card" href="/tool.html?slug=${t.slug}" style="--cat-color: var(--cat-${t.category});">
           <span class="tool-icon" aria-hidden="true"><svg><use href="/assets/icons.svg#${t.icon}"/></svg></span>
           <h3>${t.name}</h3>
           <p>${t.desc}</p>
@@ -272,7 +272,7 @@ function updateSEO(tool) {
 
   let can = document.querySelector('link[rel="canonical"]');
   if (!can) { can = document.createElement('link'); can.rel = 'canonical'; document.head.appendChild(can); }
-  can.href = `${window.location.origin}/tools/${tool.slug}`;
+  can.href = `${window.location.origin}/tool.html?slug=${tool.slug}`;
 
   const setOg = (prop, val) => {
     let m = document.querySelector(`meta[property="${prop}"]`);
@@ -295,7 +295,7 @@ function boot() {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  initConsent(); // Jalankan banner cookie
+  initConsent();
 
   const page = document.body.dataset.page;
   if (page === 'home') initHome();
