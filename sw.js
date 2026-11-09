@@ -1,5 +1,5 @@
 // sw.js — service worker: cache aset inti, offline fallback.
-const CACHE = 'aio-v14';
+const CACHE = 'aio-v13';
 const ASSETS = [
   '/',
   '/index.html',
