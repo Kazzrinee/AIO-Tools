@@ -11,6 +11,7 @@ export const CATEGORIES = [
   { id: 'pelajar',    name: 'Pelajar & Produktivitas', icon: 'i-book', desc: 'Pomodoro, catatan, IPK.' },
   { id: 'hiburan',    name: 'Hiburan & Acak',    icon: 'i-dice',      desc: 'Random, dadu, nama.' },
   { id: 'islami',     name: 'Islami & Lokal',    icon: 'i-moonstar',  desc: 'Salat, kiblat, Hijriah, THR.' }
+  { id: 'lanjutan', name: 'Lanjutan & Eksperimental', icon: 'i-cpu', desc: 'P2P, AI lokal, Steganografi, Terminal.' }
 ];
 
 export const TOOLS = [
@@ -1535,5 +1536,61 @@ export const TOOLS = [
     ],
     module: 'islami-2.js', fn: 'asmaulHusna'
   },
-  
+    // ============ LANJUTAN & EKSPERIMENTAL ============
+  {
+    slug: 'text-to-speech', name: 'Text to Speech (TTS)', category: 'lanjutan', icon: 'i-mic',
+    desc: 'Ubah teks menjadi suara alami langsung dari browser Anda.',
+    seoTitle: 'Text to Speech Online Gratis', seoDesc: 'Ubah teks jadi suara menggunakan Web Speech API tanpa batas.',
+    howTo: ['Masukkan teks.', 'Atur kecepatan & nada.', 'Klik Putar Suara.'],
+    faq: [{ q: 'Butuh internet?', a: 'Tidak, memakai suara bawaan sistem operasi Anda.' }, { q: 'Bisa unduh MP3?', a: 'Saat ini hanya bisa diputar langsung.' }, { q: 'Bahasa Indonesia?', a: 'Ya, mendukung bahasa Indonesia jika suara TTS bawaan HP/PC Anda tersedia.' }],
+    module: 'lanjutan-1.js', fn: 'textToSpeech'
+  },
+  {
+    slug: 'steganografi', name: 'Steganografi Gambar', category: 'lanjutan', icon: 'i-image-plus',
+    desc: 'Sembunyikan pesan rahasia di dalam piksel gambar PNG.',
+    seoTitle: 'Steganografi Online (Pesan Rahasia di Gambar)', seoDesc: 'Sisipkan pesan rahasia ke dalam gambar tanpa merusak tampilannya.',
+    howTo: ['Pilih gambar PNG.', 'Ketik pesan rahasia.', 'Unduh gambar, lalu buka di tab ekstrak untuk membacanya.'],
+    faq: [{ q: 'Apakah gambar berubah?', a: 'Secara visual tidak, karena pesan disisipkan di bit terakhir warna.' }, { q: 'Format apa yang didukung?', a: 'Wajib PNG. Jangan simpan ulang sebagai JPG karena kompresi akan menghapus pesannya.' }, { q: 'Apakah ini enkripsi?', a: 'Bukan, ini menyembunyikan (steganografi), bukan mengacak.' }],
+    module: 'lanjutan-1.js', fn: 'steganografi'
+  },
+  {
+    slug: 'ascii-art', name: 'Gambar ke ASCII Art', category: 'lanjutan', icon: 'i-terminal',
+    desc: 'Ubah foto menjadi seni teks ASCII murni.',
+    seoTitle: 'ASCII Art Generator Online', seoDesc: 'Ubah gambar menjadi teks ASCII secara instan.',
+    howTo: ['Pilih gambar.', 'Atur lebar karakter.', 'Klik Buat ASCII, lalu salin hasilnya.'],
+    faq: [{ q: 'Bisa diwarnai?', a: 'Hasil berupa teks monokrom (hitam-putih).' }, { q: 'Bagaimana cara menyimpannya?', a: 'Klik Salin, lalu tempel di Notepad atau Word.' }, { q: 'Kenapa gambarnya gepeng?', a: 'Karena karakter teks lebih tinggi dari lebarnya, kami menyesuaikan rasio agar proporsional.' }],
+    module: 'lanjutan-1.js', fn: 'asciiArt'
+  },
+  {
+    slug: 'web-terminal', name: 'Web Terminal', category: 'lanjutan', icon: 'i-terminal-square',
+    desc: 'Simulasi terminal Linux di dalam browser. Ketik perintah seperti aslinya.',
+    seoTitle: 'Web Terminal Simulator Online', seoDesc: 'Rasakan sensasi menggunakan terminal tanpa perlu install OS.',
+    howTo: ['Klik area hitam.', 'Ketik "help" lalu Enter.', 'Coba perintah lain seperti "ls", "pwd", atau "secret.txt".'],
+    faq: [{ q: 'Apakah ini asli?', a: 'Ini simulasi antarmuka. Tidak terhubung ke server sungguhan.' }, { q: 'Bisa menjalankan script?', a: 'Hanya perintah yang sudah diprogram.' }, { q: 'Bisa dijadikan hacker-hackeran?', a: 'Tentu, untuk gaya-gayaan di depan teman.' }],
+    module: 'lanjutan-1.js', fn: 'webTerminal'
+  },
+  {
+    slug: 'webcam-booth', name: 'Webcam Photo Booth', category: 'lanjutan', icon: 'i-camera',
+    desc: 'Ambil foto langsung dari kamera perangkat dengan filter.',
+    seoTitle: 'Webcam Photo Booth Online', seoDesc: 'Ambil foto dari webcam atau kamera HP langsung di browser.',
+    howTo: ['Klik Nyalakan Kamera.', 'Pilih filter.', 'Klik Ambil Foto lalu unduh.'],
+    faq: [{ q: 'Apakah foto diunggah?', a: 'Tidak, 100% diproses di memori browser.' }, { q: 'Kamera tidak muncul?', a: 'Izinkan akses kamera di browser. Wajib menggunakan HTTPS (Cloudflare sudah menyediakannya).' }, { q: 'Ada batas waktu?', a: 'Tidak ada.' }],
+    module: 'lanjutan-2.js', fn: 'webcamBooth'
+  },
+  {
+    slug: 'sensor-wajah', name: 'Sensor Wajah AI', category: 'lanjutan', icon: 'i-user-x',
+    desc: 'Blur wajah secara otomatis menggunakan AI yang berjalan di browser.',
+    seoTitle: 'Blur Wajah Otomatis (AI) Online', seoDesc: 'Sensor wajah di foto secara otomatis dengan AI tanpa upload ke server.',
+    howTo: ['Pilih gambar (bisa foto grup).', 'Klik Sensor Wajah.', 'Tunggu AI memproses, lalu unduh hasilnya.'],
+    faq: [{ q: 'Butuh internet?', a: 'Hanya saat pertama kali memuat model AI (± 2MB). Setelah itu bisa offline.' }, { q: 'Akurasinya?', a: 'Sangat baik untuk wajah yang terlihat jelas.' }, { q: 'Bisa untuk video?', a: 'Versi ini hanya untuk gambar diam.' }],
+    module: 'lanjutan-2.js', fn: 'faceBlur'
+  },
+  {
+    slug: 'p2p-transfer', name: 'P2P Transfer File', category: 'lanjutan', icon: 'i-send',
+    desc: 'Kirim file antar perangkat tanpa server perantara (Peer-to-Peer).',
+    seoTitle: 'P2P File Transfer (WebRTC)', seoDesc: 'Kirim file dari HP ke Laptop secara langsung tanpa upload ke server.',
+    howTo: ['Di HP: klik Buat Koneksi, salin kode Offer.', 'Di Laptop: tempel kode Offer ke kotak Penerima, klik Terima Koneksi.', 'Salin balik kode Answer ke HP, klik Hubungkan, lalu pilih file.'],
+    faq: [{ q: 'Apakah data melewati server?', a: 'Tidak, file mengalir langsung antar perangkat via WebRTC.' }, { q: 'Batas ukuran file?', a: 'Sangat besar (GB) selama koneksi internet stabil untuk sinyal awal.' }, { q: 'Kenapa harus copy-paste kode?', a: 'Karena tidak ada server sinyal (Signaling Server) berbayar. Ini cara paling privat.' }],
+    module: 'lanjutan-2.js', fn: 'p2pTransfer'
+  }
 ];
