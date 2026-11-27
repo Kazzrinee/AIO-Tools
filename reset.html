@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><title>Reset Cache</title></head>
+<body style="font-family: sans-serif; text-align: center; padding: 50px;">
+  <h2 id="status">Sedang membersihkan cache...</h2>
+  <script>
+    async function reset() {
+      // 1. Hapus semua Cache
+      const keys = await caches.keys();
+      await Promise.all(keys.map(k => caches.delete(k)));
+      
+      // 2. Hapus semua Service Worker
+      const regs = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(r => r.unregister()));
+      
+      // 3. Hapus localStorage (opsional)
+      localStorage.clear();
+      sessionStorage.clear();
+
+      document.getElementById('status').textContent = "Berhasil dibersihkan! Mengalihkan ke beranda...";
+      setTimeout(() => { window.location.href = '/'; }, 1500);
+    }
+    reset();
+  </script>
+</body>
+</html>
