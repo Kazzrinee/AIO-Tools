@@ -1535,5 +1535,5 @@ export const TOOLS = [
     ],
     module: 'islami-2.js', fn: 'asmaulHusna'
   },
-  { id: 'lanjutan', name: 'Lanjutan & Eksperimental', icon: 'i-cpu', desc: 'P2P, AI lokal, Steganografi, Terminal.' }
+  
 ];
