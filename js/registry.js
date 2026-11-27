@@ -1534,5 +1534,6 @@ export const TOOLS = [
       { q: 'Bisa untuk hafalan?', a: 'Bisa, daftar bisa dicari berdasarkan nama atau arti.' }
     ],
     module: 'islami-2.js', fn: 'asmaulHusna'
-  }
+  },
+  { id: 'lanjutan', name: 'Lanjutan & Eksperimental', icon: 'i-cpu', desc: 'P2P, AI lokal, Steganografi, Terminal.' }
 ];
