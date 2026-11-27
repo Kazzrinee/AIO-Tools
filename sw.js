@@ -32,6 +32,8 @@ const ASSETS = [
   '/js/tools/hiburan-2.js',
   '/js/tools/islami-1.js',
   '/js/tools/islami-2.js',
+  '/js/tools/lanjutan-1.js',
+  '/js/tools/lanjutan-2.js',
   '/assets/icons.svg',
   '/assets/favicon.svg',
   '/assets/logo.svg',
