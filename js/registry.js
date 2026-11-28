@@ -9,13 +9,13 @@ export const CATEGORIES = [
   { id: 'keamanan',   name: 'Keamanan',          icon: 'i-shield',    desc: 'Password, hash, enkripsi.' },
   { id: 'seo',        name: 'SEO & Marketing',   icon: 'i-trend',     desc: 'Meta tag, sitemap, UTM.' },
   { id: 'pelajar',    name: 'Pelajar & Produktivitas', icon: 'i-book', desc: 'Pomodoro, catatan, IPK.' },
-  { id: 'hiburan',    name: 'Hiburan & Acak',    icon: 'i-dice',      desc: 'Random, dadu, nama.' },
+  { id: 'hiburan',    name: 'Hiburan & Acak',    icon: 'i-dice',      desc: 'Random, dadu, nama, game.' },
   { id: 'islami',     name: 'Islami & Lokal',    icon: 'i-moonstar',  desc: 'Salat, kiblat, Hijriah, THR.' },
   { id: 'lanjutan',   name: 'Lanjutan & Eksperimental', icon: 'i-cpu', desc: 'P2P, AI lokal, Steganografi, Terminal.' }
 ];
 
 export const TOOLS = [
-  // ============ TEKS ============
+  // ============ TEKS (10) ============
   { slug: 'penghitung-kata', name: 'Penghitung Kata & Karakter', category: 'teks', icon: 'i-text', desc: 'Hitung jumlah kata, karakter, kalimat, dan paragraf secara instan.', seoTitle: 'Penghitung Kata & Karakter Online', seoDesc: 'Hitung kata, karakter, kalimat, dan paragraf.', howTo: ['Tempel teks.', 'Angka diperbarui otomatis.'], faq: [{ q: 'Apakah teks dikirim ke server?', a: 'Tidak.' }], module: 'teks-1.js', fn: 'wordCounter' },
   { slug: 'ubah-huruf', name: 'Ubah Huruf Besar/Kecil', category: 'teks', icon: 'i-text', desc: 'Ubah teks ke UPPERCASE, lowercase, Title Case, atau Sentence case.', seoTitle: 'Ubah Huruf Besar Kecil Online', seoDesc: 'Konversi huruf besar/kecil.', howTo: ['Tempel teks.', 'Pilih mode.'], faq: [{ q: 'Apakah tanda baca berubah?', a: 'Tidak.' }], module: 'teks-1.js', fn: 'caseConverter' },
   { slug: 'hapus-duplikat-baris', name: 'Hapus Duplikat Baris', category: 'teks', icon: 'i-filter', desc: 'Hapus baris yang sama dari daftar panjang.', seoTitle: 'Hapus Baris Duplikat', seoDesc: 'Hapus baris duplikat.', howTo: ['Tempel daftar.', 'Klik proses.'], faq: [{ q: 'Apakah urutan berubah?', a: 'Tidak.' }], module: 'teks-1.js', fn: 'removeDuplicates' },
@@ -27,7 +27,7 @@ export const TOOLS = [
   { slug: 'diff-teks', name: 'Diff Teks', category: 'teks', icon: 'i-diff', desc: 'Bandingkan dua versi teks.', seoTitle: 'Diff Teks', seoDesc: 'Bandingkan dua teks.', howTo: ['Tempel dua teks.'], faq: [{ q: 'Spasi dianggap?', a: 'Ya.' }], module: 'teks-2.js', fn: 'diffText' },
   { slug: 'ekstrak-email-url', name: 'Ekstrak Email & URL', category: 'teks', icon: 'i-mail', desc: 'Ambil semua alamat email dan URL dari teks.', seoTitle: 'Ekstrak Email', seoDesc: 'Ambil email dari teks.', howTo: ['Tempel teks.'], faq: [{ q: 'Hasil unik?', a: 'Ya.' }], module: 'teks-2.js', fn: 'extractEmails' },
 
-  // ============ DEVELOPER ============
+  // ============ DEVELOPER (10) ============
   { slug: 'json-formatter', name: 'JSON Formatter', category: 'developer', icon: 'i-braces', desc: 'Format, minify, dan validasi JSON.', seoTitle: 'JSON Formatter', seoDesc: 'Format JSON.', howTo: ['Tempel JSON.'], faq: [{ q: 'Error jelas?', a: 'Ya.' }], module: 'developer-1.js', fn: 'jsonFormatter' },
   { slug: 'base64', name: 'Base64 Encode/Decode', category: 'developer', icon: 'i-key', desc: 'Konversi teks ke Base64.', seoTitle: 'Base64 Encoder', seoDesc: 'Encode Base64.', howTo: ['Tempel teks.'], faq: [{ q: 'UTF-8?', a: 'Ya.' }], module: 'developer-1.js', fn: 'base64Tool' },
   { slug: 'url-codec', name: 'URL Encode/Decode', category: 'developer', icon: 'i-swap', desc: 'Encode dan decode URL.', seoTitle: 'URL Encode', seoDesc: 'Encode URL.', howTo: ['Tempel URL.'], faq: [{ q: 'Error?', a: 'Ya.' }], module: 'developer-1.js', fn: 'urlCodec' },
@@ -39,7 +39,7 @@ export const TOOLS = [
   { slug: 'regex-tester', name: 'Regex Tester', category: 'developer', icon: 'i-terminal', desc: 'Uji pola regex.', seoTitle: 'Regex Tester', seoDesc: 'Uji regex.', howTo: ['Masukkan pola.'], faq: [{ q: 'JS flavor?', a: 'Ya.' }], module: 'developer-2.js', fn: 'regexTester' },
   { slug: 'jwt-decoder', name: 'JWT Decoder', category: 'developer', icon: 'i-shield', desc: 'Decode header dan payload JWT.', seoTitle: 'JWT Decoder', seoDesc: 'Decode JWT.', howTo: ['Tempel token.'], faq: [{ q: 'Verifikasi?', a: 'Tidak.' }], module: 'developer-2.js', fn: 'jwtDecoder' },
 
-  // ============ GAMBAR ============
+  // ============ GAMBAR (10) ============
   { slug: 'kompres-gambar', name: 'Kompres Gambar', category: 'gambar', icon: 'i-image', desc: 'Perkecil ukuran file gambar.', seoTitle: 'Kompres Gambar', seoDesc: 'Perkecil gambar.', howTo: ['Pilih gambar.'], faq: [{ q: 'Server?', a: 'Tidak.' }], module: 'gambar-1.js', fn: 'compressImage' },
   { slug: 'resize-gambar', name: 'Resize Gambar', category: 'gambar', icon: 'i-sliders', desc: 'Ubah dimensi gambar.', seoTitle: 'Resize Gambar', seoDesc: 'Ubah ukuran.', howTo: ['Pilih gambar.'], faq: [{ q: 'Rasio?', a: 'Ya.' }], module: 'gambar-1.js', fn: 'resizeImage' },
   { slug: 'konversi-gambar', name: 'Konversi Gambar', category: 'gambar', icon: 'i-swap', desc: 'Konversi JPG/PNG/WebP.', seoTitle: 'Konversi Gambar', seoDesc: 'Konversi format.', howTo: ['Pilih gambar.'], faq: [{ q: 'Alpha?', a: 'Ya.' }], module: 'gambar-1.js', fn: 'convertImage' },
@@ -51,7 +51,7 @@ export const TOOLS = [
   { slug: 'watermark-gambar', name: 'Watermark Gambar', category: 'gambar', icon: 'i-layer', desc: 'Tambah teks watermark.', seoTitle: 'Watermark', seoDesc: 'Tambah watermark.', howTo: ['Atur teks.'], faq: [{ q: 'Hapus?', a: 'Sulit.' }], module: 'gambar-2.js', fn: 'watermarkImage' },
   { slug: 'filter-gambar', name: 'Filter Gambar', category: 'gambar', icon: 'i-sliders', desc: 'Filter grayscale, sepia, dll.', seoTitle: 'Filter Gambar', seoDesc: 'Beri filter.', howTo: ['Pilih filter.'], faq: [{ q: 'Gabung?', a: 'Tidak.' }], module: 'gambar-2.js', fn: 'imageFilter' },
 
-  // ============ PDF ============
+  // ============ PDF (10) ============
   { slug: 'gabung-pdf', name: 'Gabung PDF', category: 'pdf', icon: 'i-merge', desc: 'Gabungkan file PDF.', seoTitle: 'Gabung PDF', seoDesc: 'Merge PDF.', howTo: ['Pilih PDF.'], faq: [{ q: 'Server?', a: 'Tidak.' }], module: 'pdf-1.js', fn: 'mergePdf' },
   { slug: 'pisah-pdf', name: 'Pisah PDF', category: 'pdf', icon: 'i-scissors', desc: 'Ambil halaman tertentu.', seoTitle: 'Pisah PDF', seoDesc: 'Split PDF.', howTo: ['Masukkan range.'], faq: [{ q: 'Format?', a: '1-3, 5.' }], module: 'pdf-1.js', fn: 'splitPdf' },
   { slug: 'kompres-pdf', name: 'Kompres PDF', category: 'pdf', icon: 'i-filter', desc: 'Optimasi struktur PDF.', seoTitle: 'Kompres PDF', seoDesc: 'Optimasi PDF.', howTo: ['Pilih PDF.'], faq: [{ q: 'Gambar?', a: 'Tidak diubah.' }], module: 'pdf-1.js', fn: 'compressPdf' },
@@ -63,7 +63,7 @@ export const TOOLS = [
   { slug: 'hapus-halaman-pdf', name: 'Hapus Halaman PDF', category: 'pdf', icon: 'i-trash', desc: 'Hapus halaman tertentu.', seoTitle: 'Hapus Halaman PDF', seoDesc: 'Hapus halaman.', howTo: ['Masukkan range.'], faq: [{ q: 'Semua?', a: 'Ditolak.' }], module: 'pdf-2.js', fn: 'deletePages' },
   { slug: 'ekstrak-teks-pdf', name: 'Ekstrak Teks PDF', category: 'pdf', icon: 'i-file-text', desc: 'Ambil teks dari PDF.', seoTitle: 'Ekstrak Teks PDF', seoDesc: 'Ambil teks.', howTo: ['Pilih PDF.'], faq: [{ q: 'Scan?', a: 'Tidak bisa.' }], module: 'pdf-2.js', fn: 'extractTextPdf' },
 
-  // ============ KALKULATOR ============
+  // ============ KALKULATOR (10) ============
   { slug: 'kalkulator-umum', name: 'Kalkulator Umum', category: 'kalkulator', icon: 'i-calc', desc: 'Kalkulator standar.', seoTitle: 'Kalkulator', seoDesc: 'Kalkulator dasar.', howTo: ['Klik tombol.'], faq: [{ q: 'Keyboard?', a: 'Ya.' }], module: 'kalkulator-1.js', fn: 'basicCalculator' },
   { slug: 'kalkulator-persentase', name: 'Kalkulator Persentase', category: 'kalkulator', icon: 'i-percent', desc: 'Hitung persentase.', seoTitle: 'Kalkulator Persentase', seoDesc: 'Hitung persen.', howTo: ['Isi angka.'], faq: [{ q: 'Diskon?', a: 'Bisa.' }], module: 'kalkulator-1.js', fn: 'percentageCalculator' },
   { slug: 'kalkulator-bmi', name: 'Kalkulator BMI', category: 'kalkulator', icon: 'i-activity', desc: 'Hitung BMI.', seoTitle: 'Kalkulator BMI', seoDesc: 'Cek berat ideal.', howTo: ['Isi berat/tinggi.'], faq: [{ q: 'Atlet?', a: 'Kurang akurat.' }], module: 'kalkulator-1.js', fn: 'bmiCalculator' },
@@ -75,7 +75,7 @@ export const TOOLS = [
   { slug: 'kalkulator-umur', name: 'Kalkulator Umur', category: 'kalkulator', icon: 'i-calendar', desc: 'Hitung umur.', seoTitle: 'Kalkulator Umur', seoDesc: 'Hitung umur.', howTo: ['Pilih tanggal.'], faq: [{ q: 'Masa depan?', a: 'Ditolak.' }], module: 'kalkulator-2.js', fn: 'ageCalculator' },
   { slug: 'selisih-tanggal', name: 'Selisih Tanggal', category: 'kalkulator', icon: 'i-calendar', desc: 'Hitung selisih hari.', seoTitle: 'Selisih Tanggal', seoDesc: 'Hitung hari.', howTo: ['Pilih 2 tanggal.'], faq: [{ q: 'Hari kerja?', a: 'Tidak.' }], module: 'kalkulator-2.js', fn: 'dateDifference' },
 
-  // ============ KONVERTER ============
+  // ============ KONVERTER (10) ============
   { slug: 'konverter-panjang', name: 'Konverter Panjang', category: 'konverter', icon: 'i-ruler', desc: 'Konversi meter, km, inci.', seoTitle: 'Konverter Panjang', seoDesc: 'Konversi panjang.', howTo: ['Isi nilai.'], faq: [{ q: 'Semua?', a: 'Ya.' }], module: 'konverter-1.js', fn: 'lengthConverter' },
   { slug: 'konverter-berat', name: 'Konverter Berat', category: 'konverter', icon: 'i-weight', desc: 'Konversi kg, g, ton.', seoTitle: 'Konverter Berat', seoDesc: 'Konversi berat.', howTo: ['Isi nilai.'], faq: [{ q: 'Ons?', a: 'Ya.' }], module: 'konverter-1.js', fn: 'weightConverter' },
   { slug: 'konverter-suhu', name: 'Konverter Suhu', category: 'konverter', icon: 'i-thermometer', desc: 'Celsius, Fahrenheit.', seoTitle: 'Konverter Suhu', seoDesc: 'Konversi suhu.', howTo: ['Isi nilai.'], faq: [{ q: 'Kelvin?', a: 'Ya.' }], module: 'konverter-1.js', fn: 'tempConverter' },
@@ -87,21 +87,21 @@ export const TOOLS = [
   { slug: 'angka-romawi', name: 'Angka Romawi', category: 'konverter', icon: 'i-hash', desc: 'Konversi Romawi.', seoTitle: 'Angka Romawi', seoDesc: 'Konversi Romawi.', howTo: ['Masukkan angka.'], faq: [{ q: 'Maks?', a: '3999.' }], module: 'konverter-2.js', fn: 'romanConverter' },
   { slug: 'konverter-basis-angka', name: 'Konverter Basis', category: 'konverter', icon: 'i-binary', desc: 'Biner, Oktal, Hex.', seoTitle: 'Konverter Basis', seoDesc: 'Konversi basis.', howTo: ['Isi angka.'], faq: [{ q: 'Error?', a: 'Ya.' }], module: 'konverter-2.js', fn: 'baseConverter' },
 
-  // ============ KEAMANAN ============
+  // ============ KEAMANAN (5) ============
   { slug: 'generator-password', name: 'Generator Password', category: 'keamanan', icon: 'i-lock', desc: 'Buat password acak.', seoTitle: 'Generator Password', seoDesc: 'Buat password.', howTo: ['Atur panjang.'], faq: [{ q: 'Aman?', a: 'Ya.' }], module: 'keamanan-1.js', fn: 'passwordGenerator' },
   { slug: 'cek-password', name: 'Cek Password', category: 'keamanan', icon: 'i-shield-check', desc: 'Cek kekuatan password.', seoTitle: 'Cek Password', seoDesc: 'Uji password.', howTo: ['Ketik password.'], faq: [{ q: 'Dikirim?', a: 'Tidak.' }], module: 'keamanan-1.js', fn: 'passwordChecker' },
   { slug: 'generator-hash', name: 'Generator Hash', category: 'keamanan', icon: 'i-hash', desc: 'MD5, SHA.', seoTitle: 'Generator Hash', seoDesc: 'Buat hash.', howTo: ['Masukkan teks.'], faq: [{ q: 'Aman?', a: 'SHA-256.' }], module: 'keamanan-1.js', fn: 'hashGenerator' },
   { slug: 'enkripsi-aes', name: 'Enkripsi AES', category: 'keamanan', icon: 'i-key', desc: 'Enkripsi teks.', seoTitle: 'Enkripsi AES', seoDesc: 'Enkripsi AES.', howTo: ['Isi teks.'], faq: [{ q: 'Kunci?', a: 'Wajib.' }], module: 'keamanan-1.js', fn: 'aesEncrypt' },
   { slug: 'generator-token', name: 'Generator Token', category: 'keamanan', icon: 'i-dice', desc: 'Token acak.', seoTitle: 'Generator Token', seoDesc: 'Buat token.', howTo: ['Klik generate.'], faq: [{ q: 'Format?', a: 'Hex/Base64.' }], module: 'keamanan-1.js', fn: 'tokenGenerator' },
 
-  // ============ SEO ============
+  // ============ SEO (5) ============
   { slug: 'generator-meta-tag', name: 'Meta Tag', category: 'seo', icon: 'i-globe', desc: 'Buat meta tag SEO.', seoTitle: 'Meta Tag', seoDesc: 'Buat meta tag.', howTo: ['Isi form.'], faq: [{ q: 'Title?', a: '60 char.' }], module: 'seo-1.js', fn: 'metaTagGenerator' },
   { slug: 'generator-open-graph', name: 'Open Graph', category: 'seo', icon: 'i-link', desc: 'Buat Open Graph.', seoTitle: 'Open Graph', seoDesc: 'Buat OG tags.', howTo: ['Isi form.'], faq: [{ q: 'Twitter?', a: 'Ya.' }], module: 'seo-1.js', fn: 'openGraphGenerator' },
   { slug: 'generator-robots-txt', name: 'Robots.txt', category: 'seo', icon: 'i-shield', desc: 'Buat robots.txt.', seoTitle: 'Robots.txt', seoDesc: 'Buat robots.', howTo: ['Isi form.'], faq: [{ q: 'Rahasia?', a: 'Tidak.' }], module: 'seo-1.js', fn: 'robotsTxtGenerator' },
   { slug: 'pembuat-utm', name: 'Pembuat UTM', category: 'seo', icon: 'i-target', desc: 'Buat UTM link.', seoTitle: 'Pembuat UTM', seoDesc: 'Buat UTM.', howTo: ['Isi form.'], faq: [{ q: 'Wajib?', a: 'Source/Medium.' }], module: 'seo-1.js', fn: 'utmBuilder' },
   { slug: 'kepadatan-kata-kunci', name: 'Keyword Density', category: 'seo', icon: 'i-trending-up', desc: 'Cek kepadatan kata.', seoTitle: 'Keyword Density', seoDesc: 'Cek SEO.', howTo: ['Tempel artikel.'], faq: [{ q: 'Ideal?', a: '1-2%.' }], module: 'seo-1.js', fn: 'keywordDensity' },
 
-  // ============ PELAJAR ============
+  // ============ PELAJAR (10) ============
   { slug: 'pomodoro-timer', name: 'Pomodoro Timer', category: 'pelajar', icon: 'i-timer', desc: 'Timer fokus 25 menit.', seoTitle: 'Pomodoro Timer', seoDesc: 'Timer fokus.', howTo: ['Klik mulai.'], faq: [{ q: 'Suara?', a: 'Beep.' }], module: 'pelajar-1.js', fn: 'pomodoroTimer' },
   { slug: 'todo-list', name: 'To-Do List', category: 'pelajar', icon: 'i-check-square', desc: 'Daftar tugas.', seoTitle: 'To-Do List', seoDesc: 'Catat tugas.', howTo: ['Ketik tugas.'], faq: [{ q: 'Hilang?', a: 'Tidak.' }], module: 'pelajar-1.js', fn: 'todoList' },
   { slug: 'catatan-cepat', name: 'Catatan Cepat', category: 'pelajar', icon: 'i-edit', desc: 'Papan tulis digital.', seoTitle: 'Catatan Cepat', seoDesc: 'Catatan auto-save.', howTo: ['Mulai ngetik.'], faq: [{ q: 'Kapan simpan?', a: 'Otomatis.' }], module: 'pelajar-1.js', fn: 'quickNotes' },
@@ -113,7 +113,7 @@ export const TOOLS = [
   { slug: 'stopwatch', name: 'Stopwatch', category: 'pelajar', icon: 'i-clock', desc: 'Stopwatch presisi.', seoTitle: 'Stopwatch', seoDesc: 'Hitung waktu.', howTo: ['Klik mulai.'], faq: [{ q: 'Lap?', a: 'Ya.' }], module: 'pelajar-2.js', fn: 'stopwatch' },
   { slug: 'acak-kelompok', name: 'Acak Kelompok', category: 'pelajar', icon: 'i-users', desc: 'Bagi kelompok acak.', seoTitle: 'Acak Kelompok', seoDesc: 'Bagi tim.', howTo: ['Isi nama.'], faq: [{ q: 'Maks?', a: '100.' }], module: 'pelajar-2.js', fn: 'groupRandomizer' },
 
-  // ============ HIBURAN ============
+  // ============ HIBURAN (11) ============
   { slug: 'pemilih-acak', name: 'Pemilih Acak', category: 'hiburan', icon: 'i-shuffle', desc: 'Pilih nama acak.', seoTitle: 'Pemilih Acak', seoDesc: 'Pilih acak.', howTo: ['Masukkan nama.'], faq: [{ q: 'Adil?', a: 'Ya.' }], module: 'hiburan-1.js', fn: 'randomPicker' },
   { slug: 'lempar-koin', name: 'Lempar Koin', category: 'hiburan', icon: 'i-circle', desc: 'Lempar koin.', seoTitle: 'Lempar Koin', seoDesc: 'Koin digital.', howTo: ['Klik lempar.'], faq: [{ q: '50:50?', a: 'Ya.' }], module: 'hiburan-1.js', fn: 'coinFlip' },
   { slug: 'lempar-dadu', name: 'Lempar Dadu', category: 'hiburan', icon: 'i-dice', desc: 'Lempar dadu.', seoTitle: 'Lempar Dadu', seoDesc: 'Dadu digital.', howTo: ['Klik lempar.'], faq: [{ q: 'Maks?', a: '5 dadu.' }], module: 'hiburan-1.js', fn: 'diceRoll' },
@@ -124,8 +124,9 @@ export const TOOLS = [
   { slug: 'suit-online', name: 'Suit Online', category: 'hiburan', icon: 'i-smile', desc: 'Batu gunting kertas.', seoTitle: 'Suit', seoDesc: 'Main suit.', howTo: ['Pilih jari.'], faq: [{ q: 'Curang?', a: 'Tidak.' }], module: 'hiburan-2.js', fn: 'rockPaperScissors' },
   { slug: 'lempar-banyak-koin', name: 'Banyak Koin', category: 'hiburan', icon: 'i-circle', desc: 'Lempar 100 koin.', seoTitle: 'Banyak Koin', seoDesc: 'Simulasi koin.', howTo: ['Atur jumlah.'], faq: [{ q: 'Akurat?', a: 'Ya.' }], module: 'hiburan-2.js', fn: 'multiCoinFlip' },
   { slug: 'undian-hadiah', name: 'Undian Hadiah', category: 'hiburan', icon: 'i-gift', desc: 'Tarik pemenang.', seoTitle: 'Undian Hadiah', seoDesc: 'Giveaway.', howTo: ['Isi peserta.'], faq: [{ q: 'Bisa live?', a: 'Ya.' }], module: 'hiburan-2.js', fn: 'giftDraw' },
+  { slug: 'catur-online', name: 'Catur AI & Mabar', category: 'hiburan', icon: 'i-chess', desc: 'Main catur lawan AI, atau Mabar P2P. Dilengkapi asisten Stockfish.', seoTitle: 'Catur Online & Asisten AI', seoDesc: 'Main catur online, lawan AI, atau mabar bareng teman.', howTo: ['Pilih mode (AI / P2P).', 'Klik bidak lalu klik kotak tujuan.', 'Gunakan "Tanya AI" jika butuh bantuan (Cheat).'], faq: [{ q: 'Bisa mabar?', a: 'Bisa via kode WebRTC (Host & Join).' }, { q: 'Apa itu Tanya AI?', a: 'Menampilkan langkah terbaik menurut Stockfish.' }], module: 'catur.js', fn: 'caturGame' },
 
-  // ============ ISLAMI ============
+  // ============ ISLAMI (10) ============
   { slug: 'waktu-salat', name: 'Waktu Salat', category: 'islami', icon: 'i-mosque', desc: 'Jadwal salat.', seoTitle: 'Waktu Salat', seoDesc: 'Jadwal salat.', howTo: ['Pilih kota.'], faq: [{ q: 'Akurat?', a: 'Astronomi.' }], module: 'islami-1.js', fn: 'waktuSalat' },
   { slug: 'arah-kiblat', name: 'Arah Kiblat', category: 'islami', icon: 'i-compass', desc: 'Arah kiblat.', seoTitle: 'Arah Kiblat', seoDesc: 'Cek kiblat.', howTo: ['Pilih kota.'], faq: [{ q: 'Kompas?', a: 'Bearing.' }], module: 'islami-1.js', fn: 'arahKiblat' },
   { slug: 'konversi-hijriah', name: 'Konversi Hijriah', category: 'islami', icon: 'i-moonstar', desc: 'Masehi ke Hijriah.', seoTitle: 'Konversi Hijriah', seoDesc: 'Kalender Islam.', howTo: ['Pilih tanggal.'], faq: [{ q: 'Beda?', a: '1-2 hari.' }], module: 'islami-1.js', fn: 'konversiHijriah' },
@@ -137,7 +138,7 @@ export const TOOLS = [
   { slug: 'doa-harian', name: 'Doa Harian', category: 'islami', icon: 'i-hands', desc: 'Kumpulan doa.', seoTitle: 'Doa Harian', seoDesc: 'Doa pendek.', howTo: ['Pilih doa.'], faq: [{ q: 'Arab?', a: 'Latin.' }], module: 'islami-2.js', fn: 'doaHarian' },
   { slug: 'asmaul-husna', name: 'Asmaul Husna', category: 'islami', icon: 'i-quran', desc: '99 nama Allah.', seoTitle: 'Asmaul Husna', seoDesc: 'Nama Allah.', howTo: ['Cari nama.'], faq: [{ q: 'Jumlah?', a: '99.' }], module: 'islami-2.js', fn: 'asmaulHusna' },
 
-  // ============ LANJUTAN ============
+  // ============ LANJUTAN (7) ============
   { slug: 'text-to-speech', name: 'Text to Speech (TTS)', category: 'lanjutan', icon: 'i-mic', desc: 'Ubah teks menjadi suara alami.', seoTitle: 'Text to Speech', seoDesc: 'Ubah teks jadi suara.', howTo: ['Masukkan teks.'], faq: [{ q: 'Internet?', a: 'Tidak.' }], module: 'lanjutan-1.js', fn: 'textToSpeech' },
   { slug: 'steganografi', name: 'Steganografi Gambar', category: 'lanjutan', icon: 'i-image-plus', desc: 'Sembunyikan pesan di gambar.', seoTitle: 'Steganografi', seoDesc: 'Pesan rahasia.', howTo: ['Pilih gambar.'], faq: [{ q: 'Format?', a: 'PNG.' }], module: 'lanjutan-1.js', fn: 'steganografi' },
   { slug: 'ascii-art', name: 'Gambar ke ASCII', category: 'lanjutan', icon: 'i-terminal', desc: 'Foto jadi teks.', seoTitle: 'ASCII Art', seoDesc: 'Gambar ASCII.', howTo: ['Pilih gambar.'], faq: [{ q: 'Warna?', a: 'Hitam-putih.' }], module: 'lanjutan-1.js', fn: 'asciiArt' },
