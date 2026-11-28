@@ -10,8 +10,8 @@ export const CATEGORIES = [
   { id: 'seo',        name: 'SEO & Marketing',   icon: 'i-trend',     desc: 'Meta tag, sitemap, UTM.' },
   { id: 'pelajar',    name: 'Pelajar & Produktivitas', icon: 'i-book', desc: 'Pomodoro, catatan, IPK.' },
   { id: 'hiburan',    name: 'Hiburan & Acak',    icon: 'i-dice',      desc: 'Random, dadu, nama.' },
-  { id: 'islami',     name: 'Islami & Lokal',    icon: 'i-moonstar',  desc: 'Salat, kiblat, Hijriah, THR.' }
-  { id: 'lanjutan', name: 'Lanjutan & Eksperimental', icon: 'i-cpu', desc: 'P2P, AI lokal, Steganografi, Terminal.' }
+  { id: 'islami',     name: 'Islami & Lokal',    icon: 'i-moonstar',  desc: 'Salat, kiblat, Hijriah, THR.' },
+  { id: 'lanjutan',   name: 'Lanjutan & Eksperimental', icon: 'i-cpu', desc: 'P2P, AI lokal, Steganografi, Terminal.' }
 ];
 
 export const TOOLS = [
