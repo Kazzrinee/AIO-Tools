@@ -34,6 +34,7 @@ const ASSETS = [
   '/js/tools/islami-2.js',
   '/js/tools/lanjutan-1.js',
   '/js/tools/lanjutan-2.js',
+  '/js/tools/catur.js',
   '/assets/icons.svg',
   '/assets/favicon.svg',
   '/assets/logo.svg',
